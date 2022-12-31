@@ -1,0 +1,239 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: #252525;
+    color: aliceblue;
+}
+.toggle-bar{
+display: flex;
+gap: 2px;
+}
+.bar{
+margin-top: 0.6rem;
+margin-left: 3px;
+}
+.bar-dash{
+height: 5px;
+width: 22px;
+background-color: #2277ff;;
+display: block;
+margin-bottom: 2px;
+border-radius: 5px;
+}
+.bar-dash1{
+height: 5px;
+width: 5px;
+background-color: #2277ff;
+display: block;
+margin-bottom: 2px;
+border-radius: 1px;
+}
+.top-left-conner{
+display: flex;
+gap:25px;
+}
+.border-primary{
+border: 0.5px solid #2277ff;
+width: 120px;
+height: 28px;
+border-radius: 2px;
+display: flex;
+gap: 2px;
+}
+.border-primary p{
+    margin-left: 18px;
+    color: #2277ff;
+}
+.bar-left{
+    margin-top: 3px;
+}
+.logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.thubnmail{
+    margin-left: 25px;
+}
+.side{
+    display: flex;
+    width: 70px;
+    height: 100vh;
+    border: 0.5px  #2277ff;
+    margin-left: 15px;
+    margin-top: 1PX;
+    background:linear-gradient(to bottom right,#191919,#1E1B32)
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+.side-item{
+    display: flex;
+    margin-bottom: 5px;
+      padding: 10px;
+    justify-content:space-around;
+   
+}
+.side-item i{
+    width: 50px;
+    height: 40px;
+    margin-left: 12px;
+    font-size: 25px;
+}
+.video-g{
+ padding: 10px 10px;
+ display: flex;
+ flex-wrap: wrap;
+ background-color: #2277ff;
+ width: 92.5%;
+ height: 100vh;
+ overflow-y: scroll;
+ gap: 0.4rem;
+
+
+}
+.video-p{
+    width: 100%;
+   
+  
+
+}
+.play-it{
+    /* border: .1px solid aliceblue; */
+    width: 24.5%;
+    height: auto;
+    display: block;
+
+    
+}
+.video-title{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 4px;
+    
+}
+.video-title h1{
+    font-size: 20px;
+}
+.view-section-p{
+    display: flex;
+}
+.view-section-p p{
+    font-size: 12px;
+}
+.view-section-p button{
+    display: block;
+}
+.account{
+width: 100%;
+padding: 5px 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;    
+}
+.imgg{
+display: flex;
+gap: .5rem;
+align-items: center;
+width: 70%;
+}
+.imgg img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.imgg h1{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+}
+.video-title button{
+width: 18px;
+height: 18px;
+font-size: 10px;
+margin-right: .6rem;
+border-radius: 10px;
+
+}
+.account{
+margin-top: -1rem;
+width: 100%;
+padding: 5px 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;    
+}
+.account a{
+   color: aliceblue;
+width: 100%;
+padding: 5px 5px;
+display: flex;
+align-items: center;
+justify-content: space-between; 
+
+}
+.name-sub{
+display: flex;
+flex-direction: column;
+}
+.name-sub p{
+margin-bottom: -2px;
+}
+.account-container{
+    display: flex;
+    flex-direction: column;
+}
+.account-header{
+    display: flex;
+    gap: .5rem;
+    padding: 30px 10px;
+    width: 230%;
+    background-color: #164ea7;
+    height: 100px;
+    border-top-left-radius: 10px;
+
+    border-top-right-radius: 10px;
+}
+.account-imame{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.account-imame img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.account-imame h3{
+    font-size: 24px;
+
+}
+.account-dash{
+    margin-top: -2.4rem;
+    width: 99%;
+    height: 2px;
+    background: white;
+    opacity: 50%;
+    margin-bottom: 4.5rem;
+    object-fit: fill;
+   
+}
+.account-links{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 3rem;
+gap: 4rem;
+}
+.link{
+    display: block;
+}
+.link a{
+    color: aliceblue;
+    font-size: 22px
+}
