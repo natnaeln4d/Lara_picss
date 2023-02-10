@@ -10,7 +10,8 @@
             <div class="col-sm-6 col-lg-4 mb-4">
                 <div class="card">
                 <a href="{{$image->permlink()}}">
-                    <img src="{{$image->fileUrl() ? asset('images/'.$image->fileUrl()) : 'http://via.placeholder.com/500x500'}}" alt="{{$image->title}}" class="card-img-top" />
+
+                    <img src=" {{$image->fileUrl()}}" alt="" class="card-img-top" />
                          </a>
 
                     <div class="photo-buttons">

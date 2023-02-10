@@ -1,10 +1,9 @@
 <x-layout title="{{$image->title}}">
-
 <div class="container-fluid mt-4">
         <div class="row">
             <div class="col-md-9">
                 <div class="image-container">
-                    <img src="{{$image->file}}" class="img-fluid" />
+                    <img src="{{$image->fileUrl()}}" class="img-fluid" />
                 </div>
 <!-- {{--
               @include('image._related')
@@ -13,8 +12,8 @@
             </div>
             <div class="col-md-3">
                 <div class="d-flex align-items-center mb-3">
-                    <img src={{$image->user->file}}
-                        alt="Author" class="rounded-circle mr-3">
+                    <img src={{$image->user->profile_picture}}
+                        alt="{{$image->user->profile_picture}}" class="rounded-circle mr-3">
                     <div class="ms-3">
                         <h5><a href="#" class="text-decoration-none">{{$image->user->name}}</a></h5>
                         <p class="text-muted mb-0">{{$image->user->getImageCount()}}</p>

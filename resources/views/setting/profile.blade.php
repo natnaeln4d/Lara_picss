@@ -66,8 +66,8 @@
                                 <img src="{{$user->profile_picture ? asset('upload/'.$user->profile_picture) : 'http://via.placeholder.com/150x150'}}"  alt="..."/>
                             </div>
                             <div class="fileinput-preview fileinput-exists img-thumbnail" style="max-width: 150px; max-height: 150px;"></div>
-                            <div class="mt-2">
-                                <span class="btn btn-outline-secondary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="profile_picture" value="{{old('profile_picture',$user->profile_picture)}}" accept="image/*"/></span>
+                            <div class="mt-2 ">
+                                <span class="btn btn-outline-secondary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists block">Change</span><input class="w-25" type="file" name="profile_picture" value="{{old('profile_picture',$user->profile_picture)}}" accept="image/*"/></span>
                                 <a href="#" class="btn btn-outline-secondary fileinput-exists" data-dismiss="fileinput">Remove</a>
                             </div>
                         </div>

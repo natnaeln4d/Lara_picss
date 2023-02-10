@@ -35,6 +35,7 @@ class Image extends Model
     }
     public function fileUrl()
     {
+
         return Storage::url($this->file);
     }
     public function permlink()

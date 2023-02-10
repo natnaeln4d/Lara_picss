@@ -42,11 +42,11 @@
                             <button type="submit" class="btn btn-primary">Upload Image</button>
                     </a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown dropstart">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       {{auth()->user()->name}}
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{route('setting.profile.edit')}}">Settings</a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
