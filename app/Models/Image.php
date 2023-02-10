@@ -19,7 +19,7 @@ class Image extends Model
     public static function makeDirectory()
     {
 
-        $subFolder='images/'.date('Y/m/d');
+        $subFolder='images/';
         Storage::makeDirectory($subFolder);
         return $subFolder;
     }
@@ -83,5 +83,5 @@ class Image extends Model
     {
        return $this->created_at->diffForHumans();
     }
- 
+
 }

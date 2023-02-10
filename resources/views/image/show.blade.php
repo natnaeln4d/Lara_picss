@@ -4,16 +4,16 @@
         <div class="row">
             <div class="col-md-9">
                 <div class="image-container">
-                    <img src="images/img1.jpeg" class="img-fluid" />
+                    <img src="{{$image->file}}" class="img-fluid" />
                 </div>
-<!-- {{-- 
+<!-- {{--
               @include('image._related')
               @include('image._comments') --}} -->
-              
+
             </div>
             <div class="col-md-3">
                 <div class="d-flex align-items-center mb-3">
-                    <img src="https://www.gravatar.com/avatar/c1d58af78e2086e8348f0f3b70425b25?d=mp&amp;s=60"
+                    <img src={{$image->user->file}}
                         alt="Author" class="rounded-circle mr-3">
                     <div class="ms-3">
                         <h5><a href="#" class="text-decoration-none">{{$image->user->name}}</a></h5>
@@ -25,16 +25,16 @@
 
                     <div>
                         <button type="button" title="Like mage" class="btn btn-primary">
-                            <img src="asset('icons/thumbs-up.svg')" alt="" class="align-text-top" width="18" height="18"> 150
+                            <img src="{{asset('icons/thumbs-up.svg')}}" alt="" class="align-text-top" width="18" height="18"> 150
                         </button>
 
                         <button type="button" title="Favorite mage" class="btn btn-danger">
-                            <img src="asset('icons/heart.svg')" alt="" width="18" height="18">
+                            <img src="{{asset('icons/heart.svg')}}" alt="" width="18" height="18">
                         </button>
                     </div>
 
                     <button title="Download" class="btn btn-success d-flex align-items-center">
-                        <img src="icons/download.svg" alt="" class="align-text-top" width="18" height="18">
+                        <img src="{{asset('icons/download.svg')}}" alt="" class="align-text-top" width="18" height="18">
                         <span class="display-block ms-2">Download</span>
                     </button>
                 </div>

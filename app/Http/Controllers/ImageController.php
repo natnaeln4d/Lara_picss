@@ -14,7 +14,7 @@ class ImageController extends Controller
        $images=Image::published()->latest()->paginate(15);
        return view('image.index',compact('images'));
     }
-    public function show(Image $image) // $image instancied by model
+    public function show(Image $image)
     {
   return view('image.show',compact('image'));
     }
